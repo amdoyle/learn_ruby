@@ -4,6 +4,9 @@ require 'friend'
 class TestFriend < MiniTest::Test
   # 'setup' gets run before each individual test
   # We can set up variables that we reuse here
+
+  attr_accessor :friend
+
   def setup
     @friend = Friend.new
   end
